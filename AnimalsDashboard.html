@@ -24,16 +24,16 @@
     <div id="animal-table"></div>
 
     <script>
-        let tableHTML = '<table>';
-        tableHTML += '<tr><th>Animal ID</th><th>Animal Name</th><th>Owner Name</th><th>Weight</th><th>Age</th></tr>';
+        let tableHTML = '<table>'; //declaration of the table which will be used to store each animal information.
+        tableHTML += '<tr><th>Animal ID</th><th>Animal Name</th><th>Owner Name</th><th>Weight</th><th>Age</th></tr>'; //declaration of the format of variables which will be taken by the table.
 
-        const animals = [
-            { id: 1, name: "Fluffy", owner: "Alice", weight: 12, age: 3 },
-            { id: 2, name: "Max", owner: "Bob", weight: 20, age: 5 }
+        const animals = [ //populating the table
+            { id: 1, name: "Fluffy", owner: "Alice", weight: 12, age: 3 }, //inputting details for animal 1.
+            { id: 2, name: "Max", owner: "Bob", weight: 20, age: 5 } //inputting details for animal 2.
         ];
 
-        tableHTML += '</table>';
-        document.getElementById('animal-table').innerHTML = tableHTML;
+        tableHTML += '</table>'; //closing the table
+        document.getElementById('animal-table').innerHTML = tableHTML; // displaying of the generated table HTML inside the 'animal-table' div.
     </script>
 </body>
 </html>
